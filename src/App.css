@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+.navbar{
+    background-color: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand{
+    font-size: 2rem !important;
+    color: purple !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid purple;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover{
+    color: purple !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width:991px){
+    .navbar-brand{
+        font-size: 1.5rem !important;
+    }
+
+    .active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+}
+
+/* Home page */
+
+.col-sm-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.col-sm-8 h2{
+    color: purple;
+}
+
+.heading{
+    font-size: 1.2rem;
+    font-weight: bolder ;
+}
+
+.head2{
+    font-size: 1.5rem;
+}
+
+.col-sm-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+}
+
+.btns{
+    display: flex;
+}
+
+.btn{
+    margin: 10px;
+}
+
+/* .img_border{
+    box-shadow: 5px 5px 25px rgb(71,71,71);
+    border-radius: 20px;
+} */
+
+/* contact */
+
+.contact{
+    margin-top: 60px;
+}
+
+.icons{
+    color: blue;
+    font-size: 40px !important;
+}
+
+.contact p{
+    font-size: 1.2rem;
+}
+
+.contact h1{
+    color: purple;
+}
+
+.contact hr{
+    height: 20px;
+    color: purple;
+}
+
+/* skills */
+
+.skills{
+    margin-top: 60px;
+}
+
+.skills h3{
+    padding: 20px 0px;
+}
+
+.skills h1{
+    color: purple;
+}
+
+.skills .row{
+    padding: 20px 50px;
+    background: rgb(48, 42, 42);
+    color: blanchedalmond;
+    /* border-radius: 20px; */
+    box-shadow: 5px 5px 25px rgb(71,71,71);
+}
+
+.skills .col-sm-6{
+    padding: 20px 30px;
+}
+
+
+/* for home again  */
+
+@media (max-width: 356px){
+    .navbar-brand{
+        font-size: 1.4rem !important;
+    }
+
+    .col-sm-8 h2{
+        font-size: 25px;
+    }
+
+    .active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+
+    .navbar-toggler{
+        padding: 0.10rem 0.25rem;
+        font-size: 1rem;
+    }
+}
+
+/* for project */
+
+.img_size{
+    box-shadow: 5px 5px 25px rgb(59, 55, 55);
+    margin-top: 20px;
+}
+
+.row1 .col-sm-6{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.proj_img{
+    width: 90%;
+    box-shadow: 5px 5px 25px rgb(59, 55, 55);
+    margin: 20px auto;
+}
+
+.img_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_center .proj_img{
+    width: 70%;
+}
+
+.col-sm-4 img:hover{
+    transform: scale(1.15);
+}
+
+.col-sm-6 img:hover{
+    transform: scale(1.15);
+}
+
+.col-sm-12 img:hover{
+    transform: scale(1.15);
+}
+
+@media(max-width: 596px){
+    .img_center .proj_img{
+        width: 90%;
+    }
 }
