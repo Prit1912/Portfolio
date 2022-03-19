@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import photo from "./resume/p11.jpg";
 
 export default function Home() {
+  
+var i = 0;
+var txt = 'Hi, I am Prit Rojivadiya';
+var speed = 100;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("name").innerHTML += txt[i];
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  useEffect(()=>{
+    typeWriter()
+  },[])
+
   return (
     <>
       <div className="container-fluid">
@@ -14,7 +31,7 @@ export default function Home() {
             />
           </div>
           <div className="col-sm-8">
-            <h2>Hi, I am Prit Rojivadiya</h2>
+            <h2 id="name" ></h2>
             <p className="heading">React JS Developer</p>
             <p className="head2">
               I am curious to learn new skills and work in Healthy Environment.
